@@ -1,0 +1,408 @@
+{
+	"info": {
+		"_postman_id": "fc21a544-2a07-4ada-85a7-629edbbb4a81",
+		"name": "post man echo request",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "postman requests",
+			"item": [
+				{
+					"name": "requests",
+					"item": [
+						{
+							"name": "get request",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{get stuff}}",
+									"host": [
+										"{{get stuff}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "post  raw text",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "hello there have a great day"
+								},
+								"url": {
+									"raw": "https://www.postman-echo.com/post",
+									"protocol": "https",
+									"host": [
+										"www",
+										"postman-echo",
+										"com"
+									],
+									"path": [
+										"post"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "post form data",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "uid",
+											"value": "1001",
+											"type": "text"
+										},
+										{
+											"key": "upass",
+											"value": "1234",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/:obj?k1=v2",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										":obj"
+									],
+									"query": [
+										{
+											"key": "k1",
+											"value": "v2"
+										}
+									],
+									"variable": [
+										{
+											"key": "obj",
+											"value": "post"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "put request",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "https://www.postman-echo.com/:obj?key1=val1",
+									"protocol": "https",
+									"host": [
+										"www",
+										"postman-echo",
+										"com"
+									],
+									"path": [
+										":obj"
+									],
+									"query": [
+										{
+											"key": "key1",
+											"value": "val1"
+										}
+									],
+									"variable": [
+										{
+											"key": "obj",
+											"value": "put"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "patch request",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "https://www.postman-echo.com/:obj?key1=val1",
+									"protocol": "https",
+									"host": [
+										"www",
+										"postman-echo",
+										"com"
+									],
+									"path": [
+										":obj"
+									],
+									"query": [
+										{
+											"key": "key1",
+											"value": "val1"
+										}
+									],
+									"variable": [
+										{
+											"key": "obj",
+											"value": "patch"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete request",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://postman-echo.com/:obj?k2=v2",
+									"protocol": "https",
+									"host": [
+										"postman-echo",
+										"com"
+									],
+									"path": [
+										":obj"
+									],
+									"query": [
+										{
+											"key": "k2",
+											"value": "v2"
+										}
+									],
+									"variable": [
+										{
+											"key": "obj",
+											"value": "delete"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "headers",
+					"item": [
+						{
+							"name": "request headers",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "sample-value",
+										"value": "how's the day",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://www.postman-echo.com/headers",
+									"protocol": "https",
+									"host": [
+										"www",
+										"postman-echo",
+										"com"
+									],
+									"path": [
+										"headers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "respose header",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://www.postman-echo.com/response-headers?k1=v1&k2=v2",
+									"protocol": "https",
+									"host": [
+										"www",
+										"postman-echo",
+										"com"
+									],
+									"path": [
+										"response-headers"
+									],
+									"query": [
+										{
+											"key": "k1",
+											"value": "v1"
+										},
+										{
+											"key": "k2",
+											"value": "v2"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "requests 2",
+					"item": [
+						{
+							"name": "patch request Copy",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "https://www.postman-echo.com/:obj?key1=val1",
+									"protocol": "https",
+									"host": [
+										"www",
+										"postman-echo",
+										"com"
+									],
+									"path": [
+										":obj"
+									],
+									"query": [
+										{
+											"key": "key1",
+											"value": "val1"
+										}
+									],
+									"variable": [
+										{
+											"key": "obj",
+											"value": "patch"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get request Copy",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://postman-echo.com/get?k1=v1&k2=v2",
+									"protocol": "https",
+									"host": [
+										"postman-echo",
+										"com"
+									],
+									"path": [
+										"get"
+									],
+									"query": [
+										{
+											"key": "k1",
+											"value": "v1"
+										},
+										{
+											"key": "k2",
+											"value": "v2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete request Copy",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://postman-echo.com/:{{object}}",
+									"protocol": "https",
+									"host": [
+										"postman-echo",
+										"com"
+									],
+									"path": [
+										":{{object}}"
+									],
+									"variable": [
+										{
+											"key": "{{object}}",
+											"value": "delete"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "put request Copy",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "https://www.postman-echo.com/:{{object}}",
+									"protocol": "https",
+									"host": [
+										"www",
+										"postman-echo",
+										"com"
+									],
+									"path": [
+										":{{object}}"
+									],
+									"variable": [
+										{
+											"key": "{{object}}",
+											"value": "put"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://postman-echo.com"
+		},
+		{
+			"key": "object",
+			"value": "put"
+		},
+		{
+			"key": "get stuff",
+			"value": "https://postman-echo.com/get?k1=v1&k2=v2"
+		}
+	]
+}
